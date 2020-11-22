@@ -7,7 +7,9 @@
 <a href="studentlist.html" target="blank">student list</a>
 <a href="newstudent.html" target="blank">new student</a>
 <hr>
-<form action="#" method="post">
+<form action="#" method="get">
+    <fieldset >
+        <legend>Personal Information</legend>
     <p>
         <label>Full Name:
             <input type="text" name="txtname">
@@ -18,12 +20,42 @@
             <input type="date" name="txtBD">
         </label>
     </p>
+    <p>
+        <label>
+            Gender: 
+            <input type="radio" name="gender" value="male">
+            Male
+            <input type="radio" name="gender" value="female">
+            Female
+        </label>
+    </p>
+    </fieldset>
+    <fieldset>
+        <legend>Contact Information</legend>
+       
+    <p>
+        <label>
+            Email: 
+            <input type="email" name="txtEmail">
+    
+        </label>
+    </p>
+    <p>
+        <label>
+            Phone: 
+            <input type="tel" name="txtPhone">
+    
+        </label>
+    </p>
     <P>
         <Label>
             Adress:
             <textarea rows="10" cols="20" name="txtarea"></textarea>
         </Label>
         </P>
+        </fieldset>
+        <fieldset>
+            <legend>University Information</legend>
         <p>
             <Label>
                 Choose yout Faculty:
@@ -34,6 +66,8 @@
                 </select>
             </Label>
         </p>
+    </fieldset>
+    <input type="submit" class="button" value="Add" name="add">
 </form>
 <hr>
 </body>
